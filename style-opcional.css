@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --blanco: #fff;
+    --negro: #212429;
+ }   
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 8px;
+    margin: 8px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-top: 50px;
+}  
+
+.navbar {
+    background-color: var(--blanco);
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--negro);
+
+}
+
+.text-menu {
+    color: var(--negro);
+    text-transform: uppercase;
+    text-decoration: none;
+    size: 16px;
+}
+
+main {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+/*GRID LAYOUT*/
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    
+}
+
+.article {
+    width: 300px;
+    height: 460px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*IMÁGEN*/
+
+.img-article {
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/*PIE DE FOTO*/
+
+.container-details-img {
+    display: flex;   
+    justify-content: space-between;
+}
+
+.box {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.precio {
+    text-align: right;
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+
+}
+
+/*FOTTER*/
+
+footer {
+    display: flex;
+    background-color: var(--negro);
+    color: var(--blanco);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot-box{
+    display: flex;
+    font-size: 14px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+}
+
+.icon-box {
+    display: flex;
+    position: relative;
+}
+
+.ico{
+    background-color: var(--blanco);
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+.icon-text {
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    width: 250px;
+    size: 16px;
+}
+
+.icon-text-only {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 250px;
+    size: 16px;
+}
