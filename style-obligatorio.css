@@ -17,22 +17,21 @@ header {
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 36px;
 }
 
 /*GRID LAYOUT*/
 .container-grid {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
     
 }
 
 .article {
-    background-color: bisque;
+    /*background-color: bisque;*/
     width: 300px;
-    height: 475px;
+    height: 460px;
     padding: 8px;
     font-size: 14px;
     text-align: center;
@@ -62,6 +61,12 @@ img {
 
 }
 
-.right {
+.precio {
     text-align: right;
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+
 }
