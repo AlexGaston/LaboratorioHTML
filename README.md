@@ -1,5 +1,5 @@
 # LaboratorioHTML
-Laboratorio HTML
+
 
 Tipografía
 La fuente utilizada es Montserrat de Google fonts 
