@@ -11,22 +11,26 @@
 }
 
 header {
-    padding: 8px;
-    margin: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header h1 {
     font-size: 32px;
-    margin-top: 50px;
+    margin-top: 80px;
 }  
 
 .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-end;
     background-color: var(--blanco);
     position: fixed;
-    top: 0;
+    top: 10px;
     padding: 10px;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-bottom: 1px solid var(--negro);
 
 }
@@ -36,6 +40,18 @@ header h1 {
     text-transform: uppercase;
     text-decoration: none;
     size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.menu-icon-burger {
+    
+    margin-top: 10px;
+}
+
+.icon-menu {
+    margin-right: 30px;
 }
 
 main {
@@ -43,6 +59,8 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
+
 /*GRID LAYOUT*/
 .container-grid {
     display: grid;
@@ -137,4 +155,10 @@ footer {
     top: 30px;
     width: 250px;
     size: 16px;
+}
+
+@media (max-width: 1280px) {
+    .container-grid {
+        gap: 30px;
+    }
 }
