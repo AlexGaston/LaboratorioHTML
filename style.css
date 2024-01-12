@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --blanco: #fff;
+    --negro: #212429;
+ }   
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*MENU NAVEGACIÓN*/
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-color: var(--blanco);
+    position: fixed;
+    top: 10px;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid var(--negro);
+
+}
+
+.text-menu {
+    color: var(--negro);
+    text-transform: uppercase;
+    text-decoration: none;
+    size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-icon-burger {
+    margin-top: 10px;
+}
+
+.icon-menu {
+    margin-top: 10px;
+}
+
+.icon-menu img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*CONTENIDO MAIN*/
+main {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+h2 span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/*GRID LAYOUT*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 5px;
+}
+
+.article {
+    width: 300px;
+    height: 460px;
+    padding: 8px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*IMÁGEN*/
+
+.img-article {
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/*PIE DE FOTO*/
+
+.container-details-img {
+    display: flex;   
+    justify-content: space-between;
+}
+
+.box {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.precio {
+    text-align: right;
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+
+}
+
+/*FOTTER*/
+
+
+
+@media (max-width: 1280px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width:920px) {
+    .opciones {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+    h2 {
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 5px;
+    }
+}
+
+@media (max-width:360px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
