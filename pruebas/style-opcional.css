@@ -15,7 +15,7 @@ header {
     margin-right: auto;
 }
 
-header h1 {
+h1 {
     font-size: 32px;
     margin-top: 80px;
 }  
@@ -51,7 +51,7 @@ header h1 {
 }
 
 .icon-menu {
-    margin-right: 30px;
+    margin: 20px;
 }
 
 main {
@@ -66,6 +66,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
+    width: 1280px;
     
 }
 
